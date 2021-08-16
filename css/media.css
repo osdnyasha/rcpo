@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 1024px) {
     body {
-        font-size: 8px;
+        font-size: 10px;
     }
     .header {
         background-image: none;
@@ -95,12 +95,18 @@
     }
     .activity .section__list-item .list-item__card .list-item__img {
         width: 80px;
+        min-width: 80px;
         height: 80px;
         display: flex;
+        overflow: hidden;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .menu .menu__link {
+        margin-top: 10px;
+        font-size: 1.3em;
+    }
     .header .header__top-line {
         justify-content: center;
     }
@@ -110,6 +116,7 @@
     }
     .header .header__nav .header__link {
         margin: 0;
+        font-size: 1.5em;
     }
     .btn {
         padding: 8px 14px;
