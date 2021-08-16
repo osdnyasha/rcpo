@@ -177,7 +177,7 @@ body {
 .menu .menu__close-btn {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 40px;
     font-size: 2em;
     cursor: pointer;
     color: #ccc;
