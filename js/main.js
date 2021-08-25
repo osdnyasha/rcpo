@@ -72,9 +72,5 @@ $(document).ready(function(){
         $(".animation--7").animated("fadeInRight", "slideOutUp");
     }, 1300);
 
-    
-	
 
 });
-
-

@@ -1,3 +1,31 @@
+@media screen and (max-width: 1366px) {
+    body {
+        font-size: 14px;
+    }
+    .header {
+        background-position-x: 803px;
+    }
+    .activity .section__right-content {
+        margin-left: 10px;
+    }
+    .activity .section__list-item {
+        width: 500px;
+    }
+    .activity .section__list-item .list-item__card--large .list-item__text{
+        flex-basis: auto;
+        width: 250px;
+    }
+    .activity .section__list-item .list-item__card--large .list-item__text--full-width {
+        width: 100%;
+    }
+    .activity .section__list-item .list-item__title {
+        text-indent: 25px;
+    }
+    .apply {
+        background-position: -180px -24px;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     body {
         font-size: 14px;
@@ -27,7 +55,7 @@
     }
     .process {
         min-height: 795px;
-        background-position: center 200px;
+        background-position: -30px 200px;
     }
 }
 
@@ -35,9 +63,15 @@
     body {
         font-size: 10px;
     }
+    .body--bg {
+        background: linear-gradient(0deg, #FFFFFF 0.77%, rgb(164 58 151 / 50%) 100%);
+    }
     .header {
         background-image: none;
         background: linear-gradient(0deg, #FFFFFF 0.77%, rgb(164 58 151 / 50%) 100%);
+    }
+    .header--bg-default {
+        background: transparent;
     }
     .header .header__title {
         width: 100%;
@@ -56,6 +90,12 @@
     }
     .header .header__list {
         width: 100%;
+    }
+    .header .header__nav .header__link--mobile {
+        display: block;
+    }
+    .header .header__nav .header__link--mobile-hide {
+        display: none;
     }
     .header .header__subtitle,
     .activity .section__title {
@@ -100,6 +140,9 @@
         display: flex;
         overflow: hidden;
     }
+    .section .cards {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -122,7 +165,10 @@
         padding: 8px 14px;
     }
     .process {
-        min-height: 400px;
+        min-height: 450px;
+        background-size: 95%;
+        background-position: 10px bottom;
+        background-image: url('../img/bg--process-m.png');
     }
     .staff .staff__list {
         flex-flow: column nowrap;
@@ -156,5 +202,10 @@
     .apply .apply__text {
         margin: 10px 0;
     }
-
+    .section .cards .card {
+        flex-basis: 100%;
+    }
+    .section--page .card__title--fixed {
+        min-height: auto;
+    }
 }
