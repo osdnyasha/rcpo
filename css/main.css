@@ -625,6 +625,10 @@ body {
     min-height: 70px;
 }
 
+.section .card__title--fixed-100 {
+    min-height: 100px;
+}
+
 .section .card__text {
     font-weight: normal;
     color: #000;

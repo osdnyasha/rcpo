@@ -205,7 +205,12 @@
     .section .cards .card {
         flex-basis: 100%;
     }
-    .section--page .card__title--fixed {
+    .section--page .card__title--fixed,
+    .section--page .card__title--fixed-100 {
         min-height: auto;
     }
+    .section--page img {
+        width: 100%;
+    }
+    
 }
