@@ -7,6 +7,7 @@
     <title>Образовательный стандарт — региональный центр профессионального образования «Образовательный стандарт»</title>
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,8 +117,39 @@
     
         <section class="section section--page">
             <div class="container">
-                <h2 class="section__title">Процедура зачисления</h2>
-                <img src="./img/processpictures.svg" width="800px" alt="">
+                <h2 class="section__title">Образцы выдаваемых документов</h2>
+                <div class="documents">
+                    
+                    <div class="document">
+                        <div class="document__title">Свидетельство о професии рабочего</div>
+                        <div class="document__img"><img src="./img/diplompr.png" href="./img/diplompr-l.png" alt=""></div>
+                    </div>
+                    <div class="document">
+                        <div class="document__title">Диплом о профессиональной переподготовке</div>
+                        <div class="document__img"><img src="./img/diplompp.png" href="./img/diplompp-l.png" alt=""></div>
+                    </div>
+                    <div class="document">
+                        <div class="document__title">Удостоверение о повышении квалификации</div>
+                        <div class="document__img"><img src="./img/diplompk.png" href="./img/diplompk-l.png" alt=""></div>
+                    </div>
+                    <div class="document">
+                        <div class="document__title">Курс целевого назначения</div>
+                        <div class="document__img"><img src="./img/diplomkcn.png" href="./img/diplomkcn-l.png" alt=""></div>
+                    </div>
+                    <div class="document">
+                        <div class="document__title">Удостоверение рабочей профессии</div>
+                        <div class="document__img"><img src="./img/diplomr.png" href="./img/diplomr-l.png" alt=""></div>
+                    </div>
+                    <div class="document">
+                        <div class="document__title">Пожарно-технический минимум</div>
+                        <div class="document__img"><img src="./img/diplomptm.png" href="./img/diplomptm-l.png" alt=""></div>
+                    </div>
+                    <div class="document">
+                        <div class="document__title">Охрана труда</div>
+                        <div class="document__img"><img src="./img/diplomot.png" href="./img/diplomot-l.png" alt=""></div>
+                    </div>
+                    
+                </div>
                 <div class="section__bottom-text">
                     Режим работы:<br>
                     Понедельник-пятница с 9.00 ч. до 18.00 ч.<br>
@@ -159,6 +191,42 @@
     <script src="./js/animate-css.js"></script>
     <script src="./js/waypoints.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/imagesloaded.min.js"></script>
+    <script src="./js/masonry.min.js"></script>
+    <script src="./js/jquery.magnific-popup.js"></script>
     <script src="./js/main.js"></script>
+    <script> 
+        var $grid = $('.documents').masonry({
+            itemSelector: '.document',
+            columnWidth: 200,
+            gutter: 20
+        });
+
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });
+
+        $('.documents').magnificPopup({
+            delegate: 'img',
+            closeOnContentClick: true,
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            
+            gallery: {
+                enabled: true,
+                navigateByImgClick: false,
+                preload: [0, 1]
+            },
+            zoom: {
+                enabled: true, 
+                duration: 200,
+                easing: 'ease-in-out',
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+            }
+        });
+    </script>
 </body>
 </html>

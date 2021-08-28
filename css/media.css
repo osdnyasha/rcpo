@@ -212,5 +212,8 @@
     .section--page img {
         width: 100%;
     }
+    .section--page .accordion-box {
+        width: 100%;
+    }
     
 }
