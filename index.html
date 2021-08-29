@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./img/cropped-cropped-LOGO_2v-2-32x32.png" sizes="32x32">
+    <link rel="icon" href="./img/cropped-cropped-LOGO_2v-2-192x192.png" sizes="192x192">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Slab&display=swap&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -65,6 +67,7 @@
             <div class="header__top-line animation--4">
                 <div class="header__logo" onclick="window.location.href='./index.html'";>
                     <img src="img/logo.png" alt="Логотип">
+                    <a id="specialButton" href="#"><img src="./img/slabovid.svg" width="180" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
                 </div>
                 <ul class="header__nav">
                     <li class="header__link header__link--pink">
@@ -142,7 +145,7 @@
                             <span>партнеров</span>
                         </div>
                     </div>
-                    <div class="header__btn btn">
+                    <div class="header__btn btn" onclick="window.location.href='./contact.html'";>
                         Связаться с нами
                     </div>
                 </div>
@@ -231,8 +234,8 @@
                         <h3 class="apply__title">От юридического лица</h3>
                         <div class="apply__text">Оплачивает обучение юридическое лицо -<br>организация</div>
                         <div class="apply__btns">
-                            <div class="apply__btn btn btn--violet">Подать заявку</div>
-                            <div class="apply__btn apply__btn--margin-l btn btn--violet">Скачать заявку</div>
+                            <div class="apply__btn btn btn--violet"><a class="apply__link" href="contact.html">Подать заявку</a></div>
+                            <div class="apply__btn apply__btn--margin-l btn btn--violet"><a class="apply__link" href="blanks.html">Скачать заявку</a></div>
                         </div>
                     </div>
                 </div>
@@ -347,5 +350,6 @@
     <script src="./js/waypoints.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/slab.min.js"></script>
 </body>
 </html>

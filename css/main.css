@@ -440,6 +440,17 @@ body {
     color: #fff;
 }
 
+.apply .apply__btn {
+    padding: 0;
+}
+
+.apply .apply__link {
+    text-decoration: none;
+    color: inherit;
+    padding: 12px 24px;
+    display: inline-block;
+}
+
 .apply__btn--margin-l {
     margin-left: 10px;
 }

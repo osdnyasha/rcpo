@@ -146,6 +146,9 @@
 }
 
 @media screen and (max-width: 800px) {
+    #specialButton {
+        display: none !important;
+    }
     .menu .menu__link {
         margin-top: 10px;
         font-size: 1.3em;
