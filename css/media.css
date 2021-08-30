@@ -218,5 +218,7 @@
     .section--page .accordion-box {
         width: 100%;
     }
-    
+    iframe {
+        width: 100%;
+    }
 }
